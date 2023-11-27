@@ -6,6 +6,6 @@
 #Where only the part of the name after the first dash is displayed
 
 list=$(ls)
-for h in $list: do
-    echo ""$h"" | cut -d "-" -f2
+for h in $list; do
+	echo "$h" | cut -d '-' -f2
 done
